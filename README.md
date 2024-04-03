@@ -1,4 +1,4 @@
-# Tauri + Angular
+# One To Rule Them All 
 
 This template should help get you started developing with Tauri and Angular.
 
