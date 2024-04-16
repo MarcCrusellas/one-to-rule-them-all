@@ -33,3 +33,14 @@ fn main() {
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
+
+
+// import yolov8 and run it with the file of my path in C:\Users\marcr\Pictures
+
+// fn run_yolov8() {
+//     let mut yolov8 = Yolov8::new();
+//     yolov8.load_model("yolov5s.tflite").unwrap();
+//     let image = image::open("C:\\Users\\marcr\\Pictures\\image.jpg").unwrap();
+//     let detections = yolov8.predict(image).unwrap();
+//     println!("{:?}", detections);
+// }

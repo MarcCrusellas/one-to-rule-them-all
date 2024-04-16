@@ -13,11 +13,11 @@
 			"prefix": "app",
 			"architect": {
 				"build": {
-					"builder": "@angular-devkit/build-angular:application",
+					"builder": "@angular-builders/custom-webpack:browser",
 					"options": {
 						"outputPath": "dist/one-to-rule-them-all",
 						"index": "src/index.html",
-						"browser": "src/main.ts",
+						"main": "src/main.ts",
 						"polyfills": [
 							"zone.js"
 						],
@@ -54,7 +54,7 @@
 					"defaultConfiguration": "production"
 				},
 				"serve": {
-					"builder": "@angular-devkit/build-angular:dev-server",
+					"builder": "@angular-builders/custom-webpack:dev-server",
 					"options": {
 						"port": 1420
 					},

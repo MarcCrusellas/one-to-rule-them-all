@@ -1,13 +1,7 @@
-<nb-layout windowMode class="container">
-
-    <nb-layout-header class="menu-sidebar" tag="menu-sidebar" responsive>
-        <ng-content select="nb-menu"></ng-content>
-    </nb-layout-header>
-
-    <nb-layout-column>
+<div class="w-full h-full flex">
+    <app-navigation [expanded]="expanded" (manualToggle)="manualToggle()"></app-navigation>
+    <div id="content">
         <router-outlet></router-outlet>
-
-        <!-- <ng-content select="router-outlet"></ng-content> -->
-    </nb-layout-column>
-
-</nb-layout>
+    </div>
+</div>
+<svg-definitions></svg-definitions>
